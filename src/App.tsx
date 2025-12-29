@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import CustomCursor from '@/components/CustomCursor';
 import LoadingScreen from '@/components/LoadingScreen';
 import ParticleBackground from '@/components/ParticleBackground';
+import ScrollToTop from '@/components/ScrollToTop';
 import Navbar from '@/components/Navbar';
 import Index from '@/pages/Index';
 import About from '@/pages/About';
@@ -32,6 +33,7 @@ const App = () => {
           <BrowserRouter>
             <CustomCursor />
             <ParticleBackground />
+            <ScrollToTop />
             <Navbar />
             <Routes>
               <Route path="/" element={<Index />} />
