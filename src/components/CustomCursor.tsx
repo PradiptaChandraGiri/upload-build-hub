@@ -56,7 +56,7 @@ const CustomCursor = () => {
     };
 
     const animateCursor = () => {
-      const dotSpeed = 0.25;
+      const dotSpeed = 0.8;
       cursorPos.current.x += (mousePos.current.x - cursorPos.current.x) * dotSpeed;
       cursorPos.current.y += (mousePos.current.y - cursorPos.current.y) * dotSpeed;
 
@@ -65,7 +65,7 @@ const CustomCursor = () => {
         cursorDotRef.current.style.top = `${cursorPos.current.y}px`;
       }
 
-      const outlineSpeed = 0.15;
+      const outlineSpeed = 0.4;
       outlinePos.current.x += (mousePos.current.x - outlinePos.current.x) * outlineSpeed;
       outlinePos.current.y += (mousePos.current.y - outlinePos.current.y) * outlineSpeed;
 
